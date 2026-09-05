@@ -1,2 +1,5 @@
 virtual_env
 .vscode
+
+# flowers dataset
+deep-learning/module-1/1.4-statistical-model-pytorch/flowers
