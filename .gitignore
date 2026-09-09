@@ -3,3 +3,11 @@ virtual_env
 
 # flowers dataset
 deep-learning/module-1/1.4-statistical-model-pytorch/flowers
+
+
+# deep learning hw1
+deep-learning/module-1/homework-1/grader
+deep-learning/module-1/homework-1/hw1_venv
+deep-learning/module-1/homework-1/grader   
+deep-learning/module-1/homework-1/homework/__pycache__     
+deep-learning/module-1/homework-1/README.md   
