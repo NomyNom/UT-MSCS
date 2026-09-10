@@ -83,7 +83,10 @@ class PyTorchBasics:
 
         Solution length: 22 characters
         """
-        raise NotImplementedError
+
+        x = x.unique()
+
+        return x
 
     @staticmethod
     def make_it_pytorch_4(x: torch.Tensor, y: torch.Tensor) -> torch.Tensor:
@@ -108,7 +111,10 @@ class PyTorchBasics:
 
         Solution length: 27 characters
         """
-        raise NotImplementedError
+
+        count = (y > torch.mean(x)).sum()
+
+        return count        
 
     @staticmethod
     def make_it_pytorch_5(x: torch.Tensor) -> torch.Tensor:
@@ -127,7 +133,8 @@ class PyTorchBasics:
 
         Solution length: 11 characters
         """
-        raise NotImplementedError
+
+        return x.T
 
     @staticmethod
     def make_it_pytorch_6(x: torch.Tensor) -> torch.Tensor:
@@ -145,7 +152,7 @@ class PyTorchBasics:
 
         Solution length: 19 characters
         """
-        raise NotImplementedError
+        return torch.diagonal(x)
 
     @staticmethod
     def make_it_pytorch_7(x: torch.Tensor) -> torch.Tensor:
@@ -163,7 +170,7 @@ class PyTorchBasics:
 
         Solution length: 27 characters
         """
-        raise NotImplementedError
+        return torch.diagonal(torch.flip(x, dims=[1]))
 
     @staticmethod
     def make_it_pytorch_8(x: torch.Tensor) -> torch.Tensor:
@@ -183,7 +190,8 @@ class PyTorchBasics:
 
         Solution length: 22 characters
         """
-        raise NotImplementedError
+
+        return torch.cumsum(x,dim=0)
 
     @staticmethod
     def make_it_pytorch_9(x: torch.Tensor) -> torch.Tensor:
@@ -208,7 +216,8 @@ class PyTorchBasics:
 
         Solution length: 36 characters
         """
-        raise NotImplementedError
+
+        return torch.cumsum(torch.cumsum(x,dim=0), dim=1)
 
     @staticmethod
     def make_it_pytorch_10(x: torch.Tensor, c: torch.Tensor) -> torch.Tensor:
