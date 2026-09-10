@@ -1,7 +1,17 @@
 virtual_env
 .vscode
+.DS_Store
 
 # flowers dataset
 deep-learning/module-1/1.4-statistical-model-pytorch/flowers
 
+<<<<<<< HEAD
 data
+=======
+
+# deep learning hw1
+deep-learning/homework-1/grader
+deep-learning/homework-1/hw1_venv
+deep-learning/homework-1/homework/__pycache__     
+deep-learning/homework-1/README.md   
+>>>>>>> refs/remotes/origin/master
