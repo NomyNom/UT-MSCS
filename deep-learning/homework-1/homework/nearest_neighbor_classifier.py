@@ -83,10 +83,15 @@ class NearestNeighborClassifier:
         Returns:
             tuple of the nearest neighbor data point [D] and its label [1]
         """
-        raise NotImplementedError
-        x = self.input_normalization(x)
-        idx = ...  # Implement me:
-        return self.data[idx], self.label[idx]
+
+        dist = [((x - self.data).pow(2).sum(), l) for self.data, l in self.label]
+
+        return dist
+
+        # raise NotImplementedError
+        # x = self.input_normalization(x)
+        # idx = ...  # Implement me:
+        # return self.data[idx], self.label[idx]
 
     def get_k_nearest_neighbor(self, x: torch.Tensor, k: int) -> tuple[torch.Tensor, torch.Tensor]:
         """
